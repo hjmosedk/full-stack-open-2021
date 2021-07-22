@@ -1,0 +1,34 @@
+POST http://localhost:3001/api/patients
+Content-Type: application/json
+
+{
+    "name": "Joseph Hansen",
+    "dateOfBirth": "1989-10-10",
+    "ssn": "090787-122X",
+    "gender": "male",
+    "occupation": "Pharmacist"
+}
+
+####
+
+GET http://localhost:3001/api/patients
+Content-Type: application/json
+
+####
+
+GET http://localhost:3001/api/patients/d2773822-f723-11e9-8f0b-362b9e155667
+
+####
+
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+    "date":"2019-05-05",
+    "type": "OccupationalHealthcare",
+    "specialist": "Dr. Christian",
+    "description": "Everything is A-ok",
+  "employerName": "EventyrSport",
+  "sickLeave": {"startDate":"2020-05-05","endDate":"2020-06-06"}
+
+}
